@@ -15,7 +15,7 @@ composer require x3group-dev/bitrix24-api-laravel
 
 Выполнить публикацию (скопируются routes и blade)
 ```injectablephp
-php artisan vendor:publish --provider="\X3Group\B24Api\Providers\B24ApiServiceProvider"
+php artisan vendor:publish --provider="B24Api\Providers\B24ApiServiceProvider"
 ```
 
 Выполнить миграции

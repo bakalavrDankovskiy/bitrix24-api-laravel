@@ -1,5 +1,5 @@
 {
-    "name": "x3group-dev/bitrix24-api-laravel",
+    "name": "bakalavrdankovskiy/bitrix24-api-laravel",
     "description": "b24 rest api",
     "type": "library",
     "license": "MIT",
@@ -7,26 +7,27 @@
         {
             "name": "x3Group",
             "email": "dev@x3group.ru"
-        },
-        {
-            "name": "MrDeff",
-            "email": "e.pedan@gmail.com",
-            "role": "Developer"
         }
     ],
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "X3Group\\B24Api\\": "src"
+            "B24Api\\": "src"
         }
     },
     "require": {
-        "x3group-dev/bitrix24-api": "^1.2.5"
+        "bakalavrdankovskiy/bitrix24-api": "dev-master"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/bakalavrDankovskiy/bitrix24-api"
+        }
+    ],
     "extra": {
         "laravel": {
             "providers": [
-                "X3Group\\B24Api\\Providers\\B24ApiServiceProvider"
+                "B24Api\\Providers\\B24ApiServiceProvider"
             ]
         }
     },
